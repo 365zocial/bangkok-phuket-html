@@ -1,10 +1,13 @@
 
 .doctor-card {
-  max-width: 400px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  max-width: 420px;
+  transition: box-shadow 0.3s ease;
 }
+
+  .doctor-card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Bootstrap shadow */
+  }
+
 .doctor-image {
   width: 80px;
   height: 80px;
@@ -25,4 +28,27 @@
 .btn-section .btn {
   border-radius: 0;
   padding: 12px 0;
+}
+
+.badge-color{
+    background-color: #fce4ec;
+    font-size: 9px;
+}
+
+.navyblue-color{
+    color: #002D73;
+}
+
+.btn-text-move {
+    transition: margin-left 0.3s ease;
+  }
+  
+  .custom-hover-btn:hover .btn-text-move {
+    margin-left: 6px; /* หรือมากกว่านี้ถ้าอยากให้ขยับเยอะ */
+  }
+
+  .position-med{
+    color: #B5B5B5;
+    font-size: 13px;
+    font-weight: 500;
 }
